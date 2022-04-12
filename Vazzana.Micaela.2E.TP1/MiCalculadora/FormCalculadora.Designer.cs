@@ -82,7 +82,7 @@
             this.lblResultado.Location = new System.Drawing.Point(20, 14);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(354, 37);
-            this.lblResultado.TabIndex = 3;
+            this.lblResultado.TabIndex = 9;
             this.lblResultado.Text = "0";
             this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -138,12 +138,14 @@
             // 
             // lstOperaciones
             // 
+            this.lstOperaciones.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lstOperaciones.FormattingEnabled = true;
-            this.lstOperaciones.ItemHeight = 15;
+            this.lstOperaciones.ItemHeight = 21;
             this.lstOperaciones.Location = new System.Drawing.Point(395, 15);
             this.lstOperaciones.Name = "lstOperaciones";
-            this.lstOperaciones.Size = new System.Drawing.Size(154, 199);
+            this.lstOperaciones.Size = new System.Drawing.Size(154, 193);
             this.lstOperaciones.TabIndex = 8;
+            this.lstOperaciones.TabStop = false;
             // 
             // FormCalculadora
             // 
