@@ -17,15 +17,15 @@ namespace Entidades
                 this.numero = ValidarOperando(value); 
             }
         }
-        Operando()
+        public Operando()
         {
             this.numero = 0;
         }
-        Operando(double numero)
+        public Operando(double numero)
         {
             this.Numero = numero.ToString();
         }
-        Operando(string strNumero)
+        public Operando(string strNumero)
         {
             this.Numero = strNumero;
         }
@@ -112,14 +112,11 @@ namespace Entidades
         }
         public static double operator /(Operando numero1, Operando numero2)
         {
-            if(numero2.numero is not 0)
+            if(numero2.numero != 0)
             {
                 return numero1.numero / numero2.numero;
             }
-            else
-            {
-                return double.MinValue;
-            }
+            return double.MinValue;
         }
     }
 }

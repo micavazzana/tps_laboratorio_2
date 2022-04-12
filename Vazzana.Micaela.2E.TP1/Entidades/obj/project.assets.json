@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mica\\Desktop\\Vazzana.Micaela.2E.TP1\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\Vazzana.Micaela.2E.TP1\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\Mica\\Desktop\\Vazzana.Micaela.2E.TP1\\Entidades\\Entidades.csproj",
+      "projectPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\Vazzana.Micaela.2E.TP1\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Mica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mica\\Desktop\\Vazzana.Micaela.2E.TP1\\Entidades\\obj\\",
+      "outputPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\Vazzana.Micaela.2E.TP1\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mica\\AppData\\Roaming\\NuGet\\NuGet.Config",
