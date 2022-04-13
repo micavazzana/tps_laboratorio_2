@@ -75,6 +75,10 @@ namespace MiCalculadora
             char.TryParse(cmbOperador.Text, out operador);
             double resultado = FormCalculadora.Operar(this.txtBoxNumero1.Text, this.txtBoxNumero2.Text, operador);
             this.lblResultado.Text = resultado.ToString();
+            if(this.cmbOperador.Text == String.Empty)
+            {
+                this.cmbOperador.Text = "+";
+            }
             this.lstOperaciones.Items.Add($"{this.txtBoxNumero1.Text} {this.cmbOperador.Text} {this.txtBoxNumero2.Text} = {resultado.ToString()}");
         }
         /// <summary>

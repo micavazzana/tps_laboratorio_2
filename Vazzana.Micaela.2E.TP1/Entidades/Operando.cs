@@ -98,7 +98,7 @@ namespace Entidades
                 }
                 return numero.ToString();
             }
-            return "Valor invalido";
+            return "Valor inválido";
         }
         /// <summary>
         /// Realiza la conversion de un numero decimal a uno binario
@@ -106,14 +106,16 @@ namespace Entidades
         /// <param name="strNumero">Cadena que contiene el numero decimal</param>
         /// <returns>Cadena con el numero convertido, o "valor invalido" si no pudo convertirlo</returns>
         public string DecimalBinario(string strNumero)
-        {
-            int numero;
+        { 
+            double numero;
+            bool resultadoConversion = double.TryParse(strNumero, out numero);
+            int numeroEntero = (int)numero;
             StringBuilder stringAuxiliar = new StringBuilder();
-            if(int.TryParse(strNumero, out numero))
+            if (resultadoConversion)
             {
                 do
                 {
-                    if (numero % 2 == 0)
+                    if (numeroEntero % 2 == 0)
                     {
                         stringAuxiliar.Insert(0, "0");
                     }
@@ -121,11 +123,11 @@ namespace Entidades
                     {
                         stringAuxiliar.Insert(0, "1");
                     }
-                    numero = numero / 2;
-                } while (numero != 0) ;
+                    numeroEntero = numeroEntero / 2;
+                } while (numeroEntero != 0) ;
                 return stringAuxiliar.ToString();
             }
-            return "Valor invalido";
+            return "Valor inválido";
         }/// <summary>
          /// Realiza la conversion de un numero decimal a uno binario
          /// </summary>
