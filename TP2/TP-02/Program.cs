@@ -16,7 +16,7 @@ namespace TP_02_2018
             Console.SetWindowSize(Console.LargestWindowWidth / 2, Console.LargestWindowHeight - 2);
 
             // Nombre del alumno
-            Console.Title = "";
+            Console.Title = "Micaela Sol Vazzana. 2E";
 
             Taller taller = new Taller(6);
 
@@ -33,12 +33,12 @@ namespace TP_02_2018
             taller += c1;
             taller += c2;
             taller += m1;
-            taller += m1;//este no
+            taller += m1;
             taller += m2;
             taller += a1;
             taller += a2;
-            taller += a3;//este no
-            taller += a4;//este no
+            taller += a3;
+            taller += a4;
 
             Console.WriteLine(taller.ToString());
             Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");

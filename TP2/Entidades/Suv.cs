@@ -6,14 +6,24 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Clase Suv, hereda de Vehiculo
+    /// </summary>
     public class Suv : Vehiculo
     {
+        /// <summary>
+        /// Constructor de Suv
+        /// </summary>
+        /// <param name="marca">marca a asignar</param>
+        /// <param name="chasis">chasis a asignar</param>
+        /// <param name="color">color a asignar</param>
         public Suv(EMarca marca, string chasis, ConsoleColor color)
             : base(marca, chasis, color)
         {
         }
+
         /// <summary>
-        /// SUV son 'Grande'
+        /// Obtiene el tamaño de SUV: 'Grande'
         /// </summary>
         protected override ETamanio Tamanio
         {
@@ -22,11 +32,16 @@ namespace Entidades
                 return ETamanio.Grande;
             }
         }
-        public override sealed string Mostrar()
+
+        /// <summary>
+        /// Muestra los datos del objeto tipo Suv
+        /// </summary>
+        /// <returns>Retorna un string con los datos</returns>
+        public sealed override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("SUV");
-            sb.AppendLine(base.Mostrar());
+            sb.Append(base.Mostrar());
             sb.AppendLine($"TAMAÑO : {this.Tamanio}");
             sb.AppendLine("\n---------------------");
             return sb.ToString();
