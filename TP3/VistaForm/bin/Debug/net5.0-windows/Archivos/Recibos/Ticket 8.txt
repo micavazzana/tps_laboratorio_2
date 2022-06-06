@@ -1,0 +1,8 @@
+Recibo: 8
+Steven Spielberg 
+Fecha de reserva: 18/6/2022
+Id Reserva:8
+Costo total: $3200
+Equipos Reservados:
+Camara - GoPro Hero 9 - Precio $3200
+

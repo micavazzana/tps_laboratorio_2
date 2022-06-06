@@ -9,12 +9,13 @@ namespace VistaForm
     /// <summary>
     /// Clase que da de alta reservas de equipos
     /// </summary>
-    public partial class FrmRealizarReserva : Form
+    public partial class FrmRealizarReserva : Form, IMostrarMensaje
     {
-        List<Equipo> listadoEquiposDisponibles;
-        List<Equipo> listadoEquiposReservados;
-        List<Reserva> listadoDeReservas;
-        List<Cliente> listadoClientes = new List<Cliente>();
+        private List<Equipo> listadoEquiposDisponibles;
+        private List<Equipo> listadoEquiposReservados;
+        private List<Reserva> listadoDeReservas;
+        private List<Cliente> listadoClientes = new List<Cliente>();
+        private float costoFinal;
 
         /// <summary>
         /// Constructor del formulario
@@ -64,6 +65,7 @@ namespace VistaForm
             this.txtDni.Text = cliente.Dni;
             this.dtpFechaReserva.Value = cliente.FechaReserva;
             this.txtMail.Text = cliente.Mail;
+            this.checkEsEstudiante.Checked = cliente.EsEstudiante;
         }
         /// <summary>
         /// Agrega el item seleccionado a un listado de equipos reservados
@@ -102,9 +104,8 @@ namespace VistaForm
             catch (Exception ex)
             {
                 MostrarMensajeError(ex);
-            }   
+            }
         }
-
         /// <summary>
         /// Elimina en caso de arrepentimiento el item seleccionado del listado de equipos reservados
         /// Lo devuelve al listado original(listado de equipo disponible)
@@ -202,6 +203,10 @@ namespace VistaForm
             Cliente cliente = new Cliente(this.txtNombre.Text, this.txtApellido.Text, this.txtDni.Text, this.dtpFechaReserva.Value, this.txtMail.Text);
             try
             {
+                if (checkEsEstudiante.Checked)
+                {
+                    cliente.EsEstudiante = true;
+                }
                 cliente.IdReserva = CrearNuevoNumeroAutoIncremental("ids.txt");
                 this.listadoClientes = Serializadora<List<Cliente>>.DeserializarXml("dataClientes.xml");
                 this.listadoClientes.Add(cliente);
@@ -247,7 +252,8 @@ namespace VistaForm
         {
             try
             {
-                Reserva reserva = new Reserva(cliente, this.listadoEquiposReservados,cliente.IdReserva);
+                Reserva reserva = new Reserva(cliente, this.listadoEquiposReservados, cliente.IdReserva);
+                costoFinal = reserva.CalcularCostoTotal(listadoEquiposReservados, cliente.EsEstudiante);
                 //Revisar:No me deja levantar las reservas si internamente apendeo al crear el StreamWriter:
                 //Necesito deserializar primero para poder sumar una nueva reserva
                 this.listadoDeReservas = Serializadora<List<Reserva>>.DeserializarJson("reservas.json");
@@ -268,12 +274,11 @@ namespace VistaForm
         /// o una excepcion arrojada por el metodo Parse</exception>
         private string CrearTicketDeReserva(Cliente cliente)
         {
-            float costoTotal = 0;
             StringBuilder equipos = new StringBuilder();
             foreach (Equipo item in this.listadoEquiposReservados)
             {
                 equipos.AppendLine(item.ToString());
-                costoTotal += item.Precio;
+
             }
             string numTicket = $"{CrearNuevoNumeroAutoIncremental("numeroTicket.txt")}";
             string contenido =
@@ -281,7 +286,7 @@ namespace VistaForm
                 $"{cliente.Nombre} {cliente.Apellido} " +
                 $"\nFecha de reserva: {cliente.FechaReserva.ToShortDateString()}" +
                 $"\nId Reserva:{cliente.IdReserva}" +
-                $"\nCosto total: ${costoTotal}" +
+                $"\nCosto total: ${this.costoFinal}" +
                 $"\nEquipos Reservados:\n{equipos}";
             try
             {
@@ -297,7 +302,7 @@ namespace VistaForm
         /// Muestra el error que las excepciones pueden arrojar y la excepcion original
         /// </summary>
         /// <param name="ex">La excepcion de la cual se mostrara el mensaje</param>
-        private void MostrarMensajeError(Exception ex)
+        public void MostrarMensajeError(Exception ex)
         {
             MessageBox.Show($"{ex.Message}\n{ex.InnerException}");
         }

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VistaForm", "VistaForm\Vist
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Entidades.csproj", "{58D5E140-C9D4-48CB-9367-32EED8D48ADE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEnchulados", "TestEnchulados\TestEnchulados.csproj", "{F637E33F-8671-4398-9CA1-DBCB49C99606}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEnchulame", "TestEnchulame\TestEnchulame.csproj", "{92F521C2-4518-4F47-BA74-5DB939C55DEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{58D5E140-C9D4-48CB-9367-32EED8D48ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58D5E140-C9D4-48CB-9367-32EED8D48ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58D5E140-C9D4-48CB-9367-32EED8D48ADE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F637E33F-8671-4398-9CA1-DBCB49C99606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F637E33F-8671-4398-9CA1-DBCB49C99606}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F637E33F-8671-4398-9CA1-DBCB49C99606}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F637E33F-8671-4398-9CA1-DBCB49C99606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F521C2-4518-4F47-BA74-5DB939C55DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F521C2-4518-4F47-BA74-5DB939C55DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F521C2-4518-4F47-BA74-5DB939C55DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F521C2-4518-4F47-BA74-5DB939C55DEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,8 +18,7 @@ namespace Entidades
         /// </summary>
         static Serializadora()
         {
-            rutaBase = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            //rutaBase = $"{AppDomain.CurrentDomain.BaseDirectory}\\Archivos";
+            rutaBase = $"{AppDomain.CurrentDomain.BaseDirectory}\\Archivos";
         }
         /// <summary>
         /// Serializa un XML

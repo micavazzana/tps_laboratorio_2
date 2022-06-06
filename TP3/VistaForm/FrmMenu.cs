@@ -1,6 +1,4 @@
-﻿using Entidades;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Windows.Forms;
 
 namespace VistaForm

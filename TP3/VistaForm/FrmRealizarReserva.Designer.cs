@@ -44,6 +44,7 @@
             this.lblItemNoSeleccionado = new System.Windows.Forms.Label();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.lblMail = new System.Windows.Forms.Label();
+            this.checkEsEstudiante = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lstEquipos
@@ -57,7 +58,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(633, 253);
+            this.btnConfirmar.Location = new System.Drawing.Point(641, 294);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(103, 34);
             this.btnConfirmar.TabIndex = 1;
@@ -185,11 +186,22 @@
             this.lblMail.TabIndex = 16;
             this.lblMail.Text = "Mail";
             // 
+            // checkEsEstudiante
+            // 
+            this.checkEsEstudiante.AutoSize = true;
+            this.checkEsEstudiante.Location = new System.Drawing.Point(576, 253);
+            this.checkEsEstudiante.Name = "checkEsEstudiante";
+            this.checkEsEstudiante.Size = new System.Drawing.Size(95, 19);
+            this.checkEsEstudiante.TabIndex = 17;
+            this.checkEsEstudiante.Text = "Es Estudiante";
+            this.checkEsEstudiante.UseVisualStyleBackColor = true;
+            // 
             // FrmRealizarReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 455);
+            this.Controls.Add(this.checkEsEstudiante);
             this.Controls.Add(this.lblMail);
             this.Controls.Add(this.txtMail);
             this.Controls.Add(this.lblItemNoSeleccionado);
@@ -236,5 +248,6 @@
         private System.Windows.Forms.Label lblItemNoSeleccionado;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label lblMail;
+        private System.Windows.Forms.CheckBox checkEsEstudiante;
     }
 }

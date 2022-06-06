@@ -6,7 +6,7 @@ namespace Entidades
     /// <summary>
     /// Clase que contiene el contenido de una reserva: Los Datos del cliente y los equipos que reservo
     /// </summary>
-    public class Reserva
+    public class Reserva : ICostoTotal
     {
         private Cliente cliente;
         private List<Equipo> equiposReservados;
@@ -72,6 +72,27 @@ namespace Entidades
                 sb.AppendLine(item.ToString());
             }
             return sb.ToString();
+        }
+        /// <summary>
+        /// Calcula el costo total de la reserva
+        /// Teniendo en cuenta si el cliente es estudiante o no
+        /// </summary>
+        /// <param name="listadoEquiposReservados">El listado de equipos que reservo el cliente</param>
+        /// <param name="esEstudiante">Recibira true si es estudiante, false caso contrario</param>
+        /// <returns>Devuelve el costo total</returns>
+        public float CalcularCostoTotal(List<Equipo> listadoEquiposReservados, bool esEstudiante)
+        {
+            float total = 0;
+            foreach (Equipo item in listadoEquiposReservados)
+            {
+                total += item.Precio;
+            }
+            if (esEstudiante)
+            {
+                total -= total * 0.15f;
+            }
+            return total;
+
         }
     }
 }

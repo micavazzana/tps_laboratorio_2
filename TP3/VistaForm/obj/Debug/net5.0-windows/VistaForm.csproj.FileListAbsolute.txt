@@ -25,7 +25,6 @@ C:\Users\Mica\Desktop\Vazzana.Micaela.2E.TP3\VistaForm\bin\Debug\net5.0-windows\
 C:\Users\Mica\Desktop\Vazzana.Micaela.2E.TP3\VistaForm\obj\Debug\net5.0-windows\VistaForm.FrmMails.resources
 C:\Users\Mica\Desktop\Vazzana.Micaela.2E.TP3\VistaForm\obj\Debug\net5.0-windows\VistaForm.Properties.Resources.resources
 C:\Users\Mica\Desktop\PrograLaboII\tps_laboratorio_2\TP3\VistaForm\bin\Debug\net5.0-windows\VistaForm.exe
-C:\Users\Mica\Desktop\PrograLaboII\tps_laboratorio_2\TP3\VistaForm\bin\Debug\net5.0-windows\Archivos\equiposEnStock.json
 C:\Users\Mica\Desktop\PrograLaboII\tps_laboratorio_2\TP3\VistaForm\bin\Debug\net5.0-windows\VistaForm.deps.json
 C:\Users\Mica\Desktop\PrograLaboII\tps_laboratorio_2\TP3\VistaForm\bin\Debug\net5.0-windows\VistaForm.runtimeconfig.json
 C:\Users\Mica\Desktop\PrograLaboII\tps_laboratorio_2\TP3\VistaForm\bin\Debug\net5.0-windows\VistaForm.runtimeconfig.dev.json

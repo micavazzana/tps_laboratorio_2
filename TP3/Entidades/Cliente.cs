@@ -17,6 +17,7 @@ namespace Entidades
         private DateTime fechaReserva;
         private string mail;
         private int idReserva;
+        private bool esEstudiante;
 
         /// <summary>
         /// Constructor público y sin parámetros necesario para la serialización
@@ -40,6 +41,7 @@ namespace Entidades
             this.dni = dni;
             this.fechaReserva = fechaReserva;
             this.mail = mail;
+            this.esEstudiante = false;//Por defecto ningun cliente accedera al descuento por estudiante
         }
         /// <summary>
         /// Propiedad de Lectura y Escritura que carga o devuelve el nombre del cliente
@@ -125,6 +127,21 @@ namespace Entidades
                 this.idReserva = value;
             }
         }
+        /// <summary>
+        /// Propiedad de Lectura y Escritura que carga o devuelve si el cliente es estudiante
+        /// </summary>
+        public bool EsEstudiante
+        {
+            get
+            {
+                return this.esEstudiante;
+            }
+            set
+            {
+                this.esEstudiante = value;
+            }
+        }
+
         /// <summary>
         /// Sobreescritura del ToString para que devuelva los datos del cliente
         /// </summary>

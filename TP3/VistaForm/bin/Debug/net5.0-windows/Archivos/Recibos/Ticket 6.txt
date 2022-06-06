@@ -1,0 +1,8 @@
+Recibo: 6
+Jose Perez 
+Fecha de reserva: 6/6/2022
+Id Reserva:6
+Costo total: $2975
+Equipos Reservados:
+Camara - Canon 6D - Precio $3500
+

@@ -1,0 +1,9 @@
+Recibo: 9
+Jose Perez 
+Fecha de reserva: 30/6/2022
+Id Reserva:9
+Costo total: $4675
+Equipos Reservados:
+Camara - Nikon D700 - Precio $2800
+Lente - Nikon 17-35mm f2.8 - Precio $2700
+
