@@ -1,0 +1,11 @@
+Recibo: 5
+David Lynch 
+Fecha de reserva: 14/6/2022
+Id Reserva:5
+Costo total: $17200
+Equipos Reservados:
+Camara - Sony A7SII - Precio $6500
+Lente - Sony G-MASTER 24-70mm f2.8 - Precio $3800
+Lente - Sony G-MASTER 16-35mm f2.8 - Precio $3400
+Luz - Dexel Panel LED 400w BICOLOR - Precio $3500
+

@@ -1,0 +1,10 @@
+Recibo: 3
+Gus Van Sant 
+Fecha de reserva: 18/6/2022
+Id Reserva:3
+Costo total: $6700
+Equipos Reservados:
+Camara - Sony A6300 - Precio $4500
+Lente - Sony FE 35mm f1.8 - Precio $1100
+Lente - Sony FE 50mm f1.8 - Precio $1100
+

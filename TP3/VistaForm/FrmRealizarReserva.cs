@@ -27,7 +27,7 @@ namespace VistaForm
             InitializeComponent();
             try
             {
-                this.listadoEquiposDisponibles = GestoraArchivos<List<Equipo>>.DeserializarJson("equiposEnStock.json");
+                this.listadoEquiposDisponibles = Serializadora<List<Equipo>>.DeserializarJson("equiposEnStock.json");
                 foreach (Equipo item in this.listadoEquiposDisponibles)
                 {
                     this.lstEquipos.Items.Add(item);
@@ -63,6 +63,7 @@ namespace VistaForm
             this.txtApellido.Text = cliente.Apellido;
             this.txtDni.Text = cliente.Dni;
             this.dtpFechaReserva.Value = cliente.FechaReserva;
+            this.txtMail.Text = cliente.Mail;
         }
         /// <summary>
         /// Agrega el item seleccionado a un listado de equipos reservados
@@ -73,29 +74,37 @@ namespace VistaForm
         /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if ((Equipo)this.lstEquipos.SelectedItem is not null)
+            try
             {
-                this.lblItemNoSeleccionado.Visible = false;
-                foreach (Equipo item in this.listadoEquiposDisponibles)
+                if ((Equipo)this.lstEquipos.SelectedItem is not null)
                 {
-                    if ((Equipo)this.lstEquipos.SelectedItem is not null
-                        && item == (Equipo)this.lstEquipos.SelectedItem
-                        && item.Estado == false)
+                    this.lblItemNoSeleccionado.Visible = false;
+                    foreach (Equipo item in this.listadoEquiposDisponibles)
                     {
-                        this.listadoEquiposReservados.Add(item);
-                        this.lstReservas.Items.Add(this.lstEquipos.SelectedItem);
-                        item.Estado = true;
+                        if ((Equipo)this.lstEquipos.SelectedItem is not null
+                            && item == (Equipo)this.lstEquipos.SelectedItem
+                            && item.Estado == false)
+                        {
+                            this.listadoEquiposReservados.Add(item);
+                            this.lstReservas.Items.Add(this.lstEquipos.SelectedItem);
+                            item.Estado = true;
+                        }
                     }
+                    int indice = this.listadoEquiposDisponibles.IndexOf((Equipo)this.lstEquipos.SelectedItem);
+                    this.lstEquipos.Items.Remove(this.lstEquipos.SelectedItem);
+                    this.listadoEquiposDisponibles.Remove(listadoEquiposDisponibles[indice]);
                 }
-                int indice = this.listadoEquiposDisponibles.IndexOf((Equipo)this.lstEquipos.SelectedItem);
-                this.lstEquipos.Items.Remove(this.lstEquipos.SelectedItem);
-                this.listadoEquiposDisponibles.Remove(listadoEquiposDisponibles[indice]);
+                else
+                {
+                    this.lblItemNoSeleccionado.Visible = true;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                this.lblItemNoSeleccionado.Visible = true;
-            }
+                MostrarMensajeError(ex);
+            }   
         }
+
         /// <summary>
         /// Elimina en caso de arrepentimiento el item seleccionado del listado de equipos reservados
         /// Lo devuelve al listado original(listado de equipo disponible)
@@ -104,31 +113,46 @@ namespace VistaForm
         /// <param name="e"></param>
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if ((Equipo)this.lstReservas.SelectedItem is not null)
+            try
             {
-                this.lblItemNoSeleccionado.Visible = false;
-                foreach (Equipo item in this.listadoEquiposReservados)
+                if ((Equipo)this.lstReservas.SelectedItem is not null)
                 {
-                    if ((Equipo)this.lstReservas.SelectedItem is not null
-                        && item == (Equipo)this.lstReservas.SelectedItem
-                        && item.Estado == true)
+                    this.lblItemNoSeleccionado.Visible = false;
+                    foreach (Equipo item in this.listadoEquiposReservados)
                     {
-                        this.listadoEquiposDisponibles.Add(item);
-                        this.lstEquipos.Items.Add(item);
-                        item.Estado = false;
+                        if ((Equipo)this.lstReservas.SelectedItem is not null
+                            && item == (Equipo)this.lstReservas.SelectedItem
+                            && item.Estado == true)
+                        {
+                            this.listadoEquiposDisponibles.Add(item);
+                            this.lstEquipos.Items.Add(item);
+                            item.Estado = false;
+                        }
                     }
+                    int indice = this.listadoEquiposReservados.IndexOf((Equipo)this.lstReservas.SelectedItem);
+                    this.lstReservas.Items.Remove(this.lstReservas.SelectedItem);
+                    this.listadoEquiposReservados.Remove(listadoEquiposReservados[indice]);
                 }
-                int indice = this.listadoEquiposReservados.IndexOf((Equipo)this.lstReservas.SelectedItem);
-                this.lstReservas.Items.Remove(this.lstReservas.SelectedItem);
-                this.listadoEquiposReservados.Remove(listadoEquiposReservados[indice]);
+                else
+                {
+                    this.lblItemNoSeleccionado.Visible = true;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                this.lblItemNoSeleccionado.Visible = true;
+                MostrarMensajeError(ex);
             }
         }
-
-
+        /// <summary>
+        /// Carga la nueva reserva:
+        /// Crea un nuevo cliente con un id de reserva unico
+        /// Crea la nueva reserva y la agrega a un listado
+        /// Crea un nuevo ticket de reserva con todos los datos de la reserva
+        /// Actualiza los equipos disponibles, quitando aquellos que son parte de la reserva
+        /// Resetea los campos para poder volver a ser cargados con una nueva reserva
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
             try
@@ -141,23 +165,14 @@ namespace VistaForm
                 }
                 else
                 {
-
                     //Creo un nuevo cliente y guardo xml
                     Cliente cliente = CrearCliente();
                     //Creo una nueva reserva y la guardo en un listado
                     CrearListaReservas(cliente);
                     //Creo un recibo
                     string ticket = CrearTicketDeReserva(cliente);
-
-                    //Actualizo mi listado de equipos disponibles y creo un json con los equipos alquilados en un nuevo listado
-                    GestoraArchivos<List<Equipo>>.SerializarJson("equiposEnStock.json", this.listadoEquiposDisponibles);
-                    List<Equipo> listaAux = GestoraArchivos<List<Equipo>>.DeserializarJson("equiposAlquilados.json");
-                    foreach (Equipo equipo in this.listadoEquiposReservados)
-                    {
-                        listaAux.Add(equipo);
-                    }
-                    GestoraArchivos<List<Equipo>>.SerializarJson("equiposAlquilados.json", listaAux);
-
+                    //Actualizo mi listado de equipos disponibles
+                    Serializadora<List<Equipo>>.SerializarJson("equiposEnStock.json", this.listadoEquiposDisponibles);
 
                     //LIMPIO LOS CAMPOS Y LISTADOS
                     this.lstReservas.Items.Clear();
@@ -184,14 +199,13 @@ namespace VistaForm
         /// o contiene una excepcion arrojada al crear el nuevo id</exception>
         private Cliente CrearCliente()
         {
-           
             Cliente cliente = new Cliente(this.txtNombre.Text, this.txtApellido.Text, this.txtDni.Text, this.dtpFechaReserva.Value, this.txtMail.Text);
             try
             {
                 cliente.IdReserva = CrearNuevoNumeroAutoIncremental("ids.txt");
-                this.listadoClientes = GestoraArchivos<List<Cliente>>.DeserializarXml("dataClientes.xml");
+                this.listadoClientes = Serializadora<List<Cliente>>.DeserializarXml("dataClientes.xml");
                 this.listadoClientes.Add(cliente);
-                GestoraArchivos<List<Cliente>>.SerializarXml("dataClientes.xml", this.listadoClientes);
+                Serializadora<List<Cliente>>.SerializarXml("dataClientes.xml", this.listadoClientes);
             }
             catch (Exception ex)
             {
@@ -213,9 +227,9 @@ namespace VistaForm
             int id = 0;
             try
             {
-                id = int.Parse(GestoraArchivos<int>.LeerArchivoTexto(nombreArchivo));
+                id = int.Parse(GestorArchivosTexto.LeerArchivoTexto(nombreArchivo));
                 id++;
-                GestoraArchivos<int>.EscribirArchivoTexto(nombreArchivo, $"{id}");
+                GestorArchivosTexto.EscribirArchivoTexto(nombreArchivo, $"{id}");
             }
             catch (Exception ex)
             {
@@ -234,10 +248,11 @@ namespace VistaForm
             try
             {
                 Reserva reserva = new Reserva(cliente, this.listadoEquiposReservados,cliente.IdReserva);
-                //Revisar:No me deja levantar las reservas si internamente apendeo al crear el StreamWriter: Necesito deserializar primero para poder sumar una nueva reserva
-                this.listadoDeReservas = GestoraArchivos<List<Reserva>>.DeserializarJson("reservas.json");
+                //Revisar:No me deja levantar las reservas si internamente apendeo al crear el StreamWriter:
+                //Necesito deserializar primero para poder sumar una nueva reserva
+                this.listadoDeReservas = Serializadora<List<Reserva>>.DeserializarJson("reservas.json");
                 this.listadoDeReservas.Add(reserva);
-                GestoraArchivos<List<Reserva>>.SerializarJson("reservas.json", this.listadoDeReservas);
+                Serializadora<List<Reserva>>.SerializarJson("reservas.json", this.listadoDeReservas);
             }
             catch (Exception ex)
             {
@@ -253,20 +268,24 @@ namespace VistaForm
         /// o una excepcion arrojada por el metodo Parse</exception>
         private string CrearTicketDeReserva(Cliente cliente)
         {
+            float costoTotal = 0;
             StringBuilder equipos = new StringBuilder();
             foreach (Equipo item in this.listadoEquiposReservados)
             {
                 equipos.AppendLine(item.ToString());
+                costoTotal += item.Precio;
             }
+            string numTicket = $"{CrearNuevoNumeroAutoIncremental("numeroTicket.txt")}";
             string contenido =
-                $"Recibo: \n" +
+                $"Recibo: {numTicket}\n" +
                 $"{cliente.Nombre} {cliente.Apellido} " +
                 $"\nFecha de reserva: {cliente.FechaReserva.ToShortDateString()}" +
                 $"\nId Reserva:{cliente.IdReserva}" +
+                $"\nCosto total: ${costoTotal}" +
                 $"\nEquipos Reservados:\n{equipos}";
             try
             {
-                GestoraArchivos<Cliente>.EscribirArchivoTexto($"\\Recibos\\Ticket {CrearNuevoNumeroAutoIncremental("numeroTicket.txt")}.txt", contenido);
+                GestorArchivosTexto.EscribirArchivoTexto($"\\Recibos\\Ticket {numTicket}.txt", contenido);
             }
             catch (Exception ex)
             {
@@ -282,21 +301,5 @@ namespace VistaForm
         {
             MessageBox.Show($"{ex.Message}\n{ex.InnerException}");
         }
-
-
-
-
-
-
-
-
-
-
-
-        //public void ActualizarListBoxes()
-        //{
-        //    lstEquipos.DataSource = this.listadoEquiposDisponibles;
-        //    lstReservas.DataSource = this.listadoEquiposReservados;
-        //}
     }
 }

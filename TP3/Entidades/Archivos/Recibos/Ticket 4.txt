@@ -1,0 +1,13 @@
+Recibo: 4
+George Lucas 
+Fecha de reserva: 25/6/2022
+Id Reserva:4
+Costo total: $10800
+Equipos Reservados:
+Lente - Rokinon DS 14mm - Precio $1800
+Lente - Rokinon DS 25mm - Precio $1800
+Lente - Rokinon DS 35mm - Precio $1800
+Lente - Rokinon DS 50mm - Precio $1800
+Lente - Rokinon DS 85mm - Precio $1800
+Lente - Rokinon DS 105mm - Precio $1800
+
