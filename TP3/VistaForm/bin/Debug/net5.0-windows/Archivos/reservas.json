@@ -189,5 +189,25 @@
         "Estado": true
       }
     ]
+  },
+  {
+    "Cliente": {
+      "Nombre": "Laultima",
+      "Apellido": "Reserva",
+      "Dni": "34521659",
+      "FechaReserva": "2022-06-08T02:16:12",
+      "Mail": "mica@ultima.com",
+      "IdReserva": 10,
+      "EsEstudiante": false
+    },
+    "EquiposReservados": [
+      {
+        "Tipo": "Gimbal",
+        "Marca": "Zhiyun",
+        "NombreEquipo": "Crane 2",
+        "Precio": 4500,
+        "Estado": true
+      }
+    ]
   }
 ]

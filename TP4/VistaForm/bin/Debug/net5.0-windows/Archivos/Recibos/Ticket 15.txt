@@ -1,0 +1,8 @@
+Recibo: 15
+Trinidad Labbate
+Fecha de reserva: 18/7/2022
+Id Reserva:15
+Costo total: $11050
+Equipos Reservados:
+Generador - HONDA 5.2kw - Precio $13000
+

@@ -1,0 +1,8 @@
+Recibo: 13
+Sergio Leone
+Fecha de reserva: 16/7/2022
+Id Reserva:13
+Costo total: $9000
+Equipos Reservados:
+Generador - HONDA 2.4kw - Precio $9000
+

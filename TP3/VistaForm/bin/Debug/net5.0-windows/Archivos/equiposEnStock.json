@@ -142,13 +142,6 @@
   {
     "Tipo": "Gimbal",
     "Marca": "Zhiyun",
-    "NombreEquipo": "Crane 2",
-    "Precio": 4500,
-    "Estado": false
-  },
-  {
-    "Tipo": "Gimbal",
-    "Marca": "Zhiyun",
     "NombreEquipo": "Crane 2S",
     "Precio": 5500,
     "Estado": false

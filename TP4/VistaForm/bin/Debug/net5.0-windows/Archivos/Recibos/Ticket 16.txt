@@ -1,0 +1,10 @@
+Recibo: 16
+Agustina Lopez
+Fecha de reserva: 19/6/2022
+Id Reserva:16
+Costo total: $17595
+Equipos Reservados:
+Follow Focus - TILTA NUCLEUS-M - Precio $3300
+Gimbal - DJI Ronin S - Precio $5500
+Camara - Sony FX3 - Precio $11900
+

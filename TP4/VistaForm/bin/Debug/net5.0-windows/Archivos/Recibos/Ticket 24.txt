@@ -1,0 +1,8 @@
+Recibo: 24
+Robert Zemeckis
+Fecha de reserva: 23/7/2022
+Id Reserva:24
+Costo total: $900
+Equipos Reservados:
+Tripode Camara - Benro KH26 - Precio $900
+

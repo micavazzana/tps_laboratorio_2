@@ -1,0 +1,10 @@
+Recibo: 17
+David Lynch
+Fecha de reserva: 24/7/2022
+Id Reserva:17
+Costo total: $20700
+Equipos Reservados:
+Follow Focus - TILTA NUCLEUS-M - Precio $3300
+Gimbal - DJI Ronin S - Precio $5500
+Camara - Sony FX3 - Precio $11900
+

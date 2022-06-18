@@ -1,0 +1,8 @@
+Recibo: 10
+Pedro Montenegro 
+Fecha de reserva: 28/6/2022
+Id Reserva:10
+Costo total: $3825
+Equipos Reservados:
+Gimbal - Zhiyun Crane 2 - Precio $4500
+

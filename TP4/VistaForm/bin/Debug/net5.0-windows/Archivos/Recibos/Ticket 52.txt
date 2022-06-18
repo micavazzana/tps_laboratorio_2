@@ -1,0 +1,10 @@
+Recibo: 52
+Adrian Suar 
+Fecha de reserva: 25/6/2022
+Id Reserva:52
+Costo total: $16100
+Equipos Reservados:
+Camara - BlackMagic Pocket 6K - Precio $11500
+Lente - Canon 24-105mm f4 L - Precio $1700
+Lente - Canon 70-200mm f2.8 L - Precio $2900
+

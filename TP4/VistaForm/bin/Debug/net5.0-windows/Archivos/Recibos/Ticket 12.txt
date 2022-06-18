@@ -1,0 +1,9 @@
+Recibo: 12
+Ridley Scott
+Fecha de reserva: 16/7/2022
+Id Reserva:12
+Costo total: $4400
+Equipos Reservados:
+Camara - Canon 6D - Precio $3500
+Lente - Tamron 24-70mm f2.8 - Precio $1400
+

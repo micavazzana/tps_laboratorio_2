@@ -1,0 +1,8 @@
+Recibo: 10
+Laultima Reserva 
+Fecha de reserva: 8/6/2022
+Id Reserva:10
+Costo total: $4500
+Equipos Reservados:
+Gimbal - Zhiyun Crane 2 - Precio $4500
+

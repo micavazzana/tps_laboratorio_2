@@ -1,0 +1,499 @@
+[
+  {
+    "Tipo": "Camara",
+    "Marca": "Sony",
+    "NombreEquipo": "A7RIV",
+    "Precio": 6900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
+    "Marca": "Canon",
+    "NombreEquipo": "5DMarkIII",
+    "Precio": 3900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
+    "Marca": "Canon",
+    "NombreEquipo": "7DMarkII",
+    "Precio": 3000,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
+    "Marca": "Lumix",
+    "NombreEquipo": "GH5",
+    "Precio": 5800,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
+    "Marca": "BlackMagic",
+    "NombreEquipo": "Pocket 4K",
+    "Precio": 8900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
+    "Marca": "Nikon",
+    "NombreEquipo": "D5100",
+    "Precio": 1600,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Canon",
+    "NombreEquipo": "24-70mm f2.8 L",
+    "Precio": 2700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Canon",
+    "NombreEquipo": "16-35mm f2.8 L",
+    "Precio": 2900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Canon",
+    "NombreEquipo": "100mm Macro f2.8",
+    "Precio": 2300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Sigma",
+    "NombreEquipo": "ART 35mm f1.4",
+    "Precio": 2700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Sigma",
+    "NombreEquipo": "ART 50mm f1.4",
+    "Precio": 2700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Sigma",
+    "NombreEquipo": "ART 85mm f1.4",
+    "Precio": 2700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Nikon",
+    "NombreEquipo": "28-105mm f3.5/4.5",
+    "Precio": 1300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Filtro",
+    "Marca": "TIFFEN",
+    "NombreEquipo": "SoftMist 1/4",
+    "Precio": 900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Filtro",
+    "Marca": "TIFFEN",
+    "NombreEquipo": "ND 1/2",
+    "Precio": 900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Filtro",
+    "Marca": "TIFFEN",
+    "NombreEquipo": "Polarizador",
+    "Precio": 900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Gimbal",
+    "Marca": "Zhiyun",
+    "NombreEquipo": "Crane 2",
+    "Precio": 4500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Gimbal",
+    "Marca": "Zhiyun",
+    "NombreEquipo": "Crane 2S",
+    "Precio": 5500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Gimbal",
+    "Marca": "Zhiyun",
+    "NombreEquipo": "Crane V1",
+    "Precio": 1300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Gimbal",
+    "Marca": "DJI",
+    "NombreEquipo": "Ronin S",
+    "Precio": 5500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Gimbal",
+    "Marca": "DJI",
+    "NombreEquipo": "Ronin SC",
+    "Precio": 4500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Gimbal",
+    "Marca": "DJI",
+    "NombreEquipo": "Ronin S2",
+    "Precio": 6500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Monitor",
+    "Marca": "Atomos",
+    "NombreEquipo": "Ninja V",
+    "Precio": 3300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Monitor",
+    "Marca": "Atomos",
+    "NombreEquipo": "SHOGUN FLAME",
+    "Precio": 2800,
+    "Estado": false
+  },
+  {
+    "Tipo": "Monitor",
+    "Marca": "Atomos",
+    "NombreEquipo": "SHOGUN INFERNO",
+    "Precio": 3500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Monitor",
+    "Marca": "Aputure",
+    "NombreEquipo": "VS-2",
+    "Precio": 1500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Monitor",
+    "Marca": "Lilliput",
+    "NombreEquipo": "A7S-7",
+    "Precio": 1900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Monitor",
+    "Marca": "Lilliput",
+    "NombreEquipo": "HS7 4K",
+    "Precio": 2100,
+    "Estado": false
+  },
+  {
+    "Tipo": "Follow Focus",
+    "Marca": "IKAN",
+    "NombreEquipo": "ELE-FGK",
+    "Precio": 1300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Follow Focus",
+    "Marca": "TILTA",
+    "NombreEquipo": "NUCLEUS-NANO",
+    "Precio": 3100,
+    "Estado": false
+  },
+  {
+    "Tipo": "Follow Focus",
+    "Marca": "TILTA",
+    "NombreEquipo": "NUCLEUS-M",
+    "Precio": 3300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "FilmGear",
+    "NombreEquipo": "HMI PAR 2.5kw",
+    "Precio": 16000,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "FilmGear",
+    "NombreEquipo": "HMI PAR 1.2kw",
+    "Precio": 12000,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Pampa",
+    "NombreEquipo": "4 Tubos cortos",
+    "Precio": 1300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Pampa",
+    "NombreEquipo": "4 Tubos largos",
+    "Precio": 1500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Pampa",
+    "NombreEquipo": "2 Tubos cortos",
+    "Precio": 900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Pampa",
+    "NombreEquipo": "2 Tubos largos",
+    "Precio": 1100,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Dexel",
+    "NombreEquipo": "Fresnel LED 400w BICOLOR",
+    "Precio": 2000,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Dexel",
+    "NombreEquipo": "Fresnel LED 200w BICOLOR",
+    "Precio": 1700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Godox",
+    "NombreEquipo": "SL-150 BICOLOR",
+    "Precio": 2500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Godox",
+    "NombreEquipo": "SL-200 DIA",
+    "Precio": 3400,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Dexel",
+    "NombreEquipo": "Tungsteno 650w",
+    "Precio": 1200,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Nanlite",
+    "NombreEquipo": "RGB",
+    "Precio": 3900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "Dexel",
+    "NombreEquipo": "Panel LED 200w BICOLOR",
+    "Precio": 2900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Luz",
+    "Marca": "FALCON EYE",
+    "NombreEquipo": "Flexible RTX18TD",
+    "Precio": 2500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Grabadora Sonido",
+    "Marca": "ZOOM",
+    "NombreEquipo": "H4N",
+    "Precio": 1200,
+    "Estado": false
+  },
+  {
+    "Tipo": "Grabadora Sonido",
+    "Marca": "ZOOM",
+    "NombreEquipo": "H6N",
+    "Precio": 1900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Grabadora Sonido",
+    "Marca": "ZOOM",
+    "NombreEquipo": "H5",
+    "Precio": 1400,
+    "Estado": false
+  },
+  {
+    "Tipo": "Grabadora Sonido",
+    "Marca": "TASCAM",
+    "NombreEquipo": "DR100",
+    "Precio": 1200,
+    "Estado": false
+  },
+  {
+    "Tipo": "Grabadora Sonido",
+    "Marca": "TASCAM",
+    "NombreEquipo": "DR40",
+    "Precio": 1400,
+    "Estado": false
+  },
+  {
+    "Tipo": "Microfono",
+    "Marca": "Sennheiser",
+    "NombreEquipo": "Ca\u00F1a MKH-416",
+    "Precio": 1700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Microfono",
+    "Marca": "Sennheiser",
+    "NombreEquipo": "Ca\u00F1a K6-ME66",
+    "Precio": 1900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Microfono",
+    "Marca": "Rode",
+    "NombreEquipo": "Ca\u00F1a NTG2",
+    "Precio": 1600,
+    "Estado": false
+  },
+  {
+    "Tipo": "Microfono",
+    "Marca": "Rode",
+    "NombreEquipo": "Ca\u00F1a NTG4",
+    "Precio": 1600,
+    "Estado": false
+  },
+  {
+    "Tipo": "Microfono",
+    "Marca": "Rode",
+    "NombreEquipo": "Corbatero SmartPlus",
+    "Precio": 1100,
+    "Estado": false
+  },
+  {
+    "Tipo": "Microfono",
+    "Marca": "Sennheiser",
+    "NombreEquipo": "Corbatero G3",
+    "Precio": 1300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Generador",
+    "Marca": "HONDA",
+    "NombreEquipo": "2.4kw",
+    "Precio": 9000,
+    "Estado": false
+  },
+  {
+    "Tipo": "Generador",
+    "Marca": "HONDA",
+    "NombreEquipo": "5.2kw",
+    "Precio": 13000,
+    "Estado": false
+  },
+  {
+    "Tipo": "Tripode Camara",
+    "Marca": "Manfrotto",
+    "NombreEquipo": "5020AH",
+    "Precio": 1200,
+    "Estado": false
+  },
+  {
+    "Tipo": "Tripode Camara",
+    "Marca": "Benro",
+    "NombreEquipo": "KH26",
+    "Precio": 900,
+    "Estado": false
+  },
+  {
+    "Tipo": "Tripode Ara\u00F1a",
+    "Marca": "Nacional",
+    "NombreEquipo": "3mts",
+    "Precio": 250,
+    "Estado": false
+  },
+  {
+    "Tipo": "Tripode Ara\u00F1a",
+    "Marca": "Avenger",
+    "NombreEquipo": "3mts",
+    "Precio": 300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Tripode",
+    "Marca": "Avenger",
+    "NombreEquipo": "Baby",
+    "Precio": 300,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
+    "Marca": "Canon",
+    "NombreEquipo": "6D",
+    "Precio": 3500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Tamron",
+    "NombreEquipo": "24-70mm f2.8",
+    "Precio": 1400,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
+    "Marca": "GoPro",
+    "NombreEquipo": "Hero 9",
+    "Precio": 3200,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
+    "Marca": "Nikon",
+    "NombreEquipo": "D700",
+    "Precio": 2800,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Nikon",
+    "NombreEquipo": "17-35mm f2.8",
+    "Precio": 2700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
+    "Marca": "BlackMagic",
+    "NombreEquipo": "Pocket 6K",
+    "Precio": 11500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Canon",
+    "NombreEquipo": "24-105mm f4 L",
+    "Precio": 1700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Canon",
+    "NombreEquipo": "70-200mm f2.8 L",
+    "Precio": 2900,
+    "Estado": false
+  }
+]

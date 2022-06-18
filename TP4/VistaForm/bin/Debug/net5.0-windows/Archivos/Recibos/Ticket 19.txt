@@ -1,0 +1,9 @@
+Recibo: 19
+Eugenia Etchandy
+Fecha de reserva: 16/7/2022
+Id Reserva:19
+Costo total: $7820
+Equipos Reservados:
+Camara - Sony A7RIV - Precio $6900
+Lente - Canon 100mm Macro f2.8 - Precio $2300
+

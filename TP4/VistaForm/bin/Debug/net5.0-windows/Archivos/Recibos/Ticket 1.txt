@@ -1,0 +1,8 @@
+Recibo: 1
+Quentin Tarantino
+Fecha de reserva: 20/6/2022
+Id Reserva:1
+Costo total: $11900
+Equipos Reservados:
+Camara - Sony FX3 - Precio $11900
+

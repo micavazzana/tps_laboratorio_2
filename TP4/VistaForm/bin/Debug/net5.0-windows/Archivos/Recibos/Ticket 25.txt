@@ -1,0 +1,9 @@
+Recibo: 25
+James Cameron
+Fecha de reserva: 2/8/2022
+Id Reserva:20
+Costo total: $9200
+Equipos Reservados:
+Camara - Sony A7RIV - Precio $6900
+Lente - Canon 100mm Macro f2.8 - Precio $2300
+

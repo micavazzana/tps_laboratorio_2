@@ -1,0 +1,9 @@
+Recibo: 14
+Martin Scorsese 
+Fecha de reserva: 12/8/2022
+Id Reserva:14
+Costo total: $14200
+Equipos Reservados:
+Generador - HONDA 5.2kw - Precio $13000
+Luz - Dexel Tungsteno 650w - Precio $1200
+

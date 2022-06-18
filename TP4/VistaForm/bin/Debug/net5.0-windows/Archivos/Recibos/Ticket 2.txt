@@ -1,0 +1,11 @@
+Recibo: 2
+Steven Spielberg
+Fecha de reserva: 22/6/2022
+Id Reserva:2
+Costo total: $3380
+Equipos Reservados:
+Dimmer -  1000w - Precio $290
+Dimmer -  2000w - Precio $290
+Luz - Dexel Tungsteno 1000w - Precio $1300
+Luz - Dexel Tungsteno 2000w - Precio $1500
+

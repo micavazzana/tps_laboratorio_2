@@ -1,0 +1,8 @@
+Recibo: 8
+Billy Wilder
+Fecha de reserva: 4/7/2022
+Id Reserva:8
+Costo total: $3200
+Equipos Reservados:
+Camara - GoPro Hero 9 - Precio $3200
+

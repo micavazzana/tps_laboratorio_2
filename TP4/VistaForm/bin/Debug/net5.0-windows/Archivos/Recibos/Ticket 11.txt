@@ -1,0 +1,9 @@
+Recibo: 11
+Valentina Olmedo 
+Fecha de reserva: 28/6/2022
+Id Reserva:11
+Costo total: $4165
+Equipos Reservados:
+Camara - Canon 6D - Precio $3500
+Lente - Tamron 24-70mm f2.8 - Precio $1400
+

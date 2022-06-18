@@ -81,4 +81,13 @@
     <IdReserva>9</IdReserva>
     <EsEstudiante>true</EsEstudiante>
   </Cliente>
+  <Cliente>
+    <Nombre>Laultima</Nombre>
+    <Apellido>Reserva</Apellido>
+    <Dni>34521659</Dni>
+    <FechaReserva>2022-06-08T02:16:12</FechaReserva>
+    <Mail>mica@ultima.com</Mail>
+    <IdReserva>10</IdReserva>
+    <EsEstudiante>false</EsEstudiante>
+  </Cliente>
 </ArrayOfCliente>

@@ -1,0 +1,12 @@
+Recibo: 5
+Malena Gomez
+Fecha de reserva: 15/8/2022
+Id Reserva:5
+Costo total: $9180
+Equipos Reservados:
+Lente - Rokinon DS 14mm - Precio $1800
+Lente - Rokinon DS 25mm - Precio $1800
+Lente - Rokinon DS 35mm - Precio $1800
+Lente - Rokinon DS 50mm - Precio $1800
+Lente - Rokinon DS 85mm - Precio $1800
+Lente - Rokinon DS 105mm - Precio $1800

@@ -1,0 +1,8 @@
+Recibo: 3
+Francis Ford Coppolla
+Fecha de reserva: 17/6/2022
+Id Reserva:3
+Costo total: $15000
+Equipos Reservados:
+Drone - DJI AIR 2S - Precio $15000
+

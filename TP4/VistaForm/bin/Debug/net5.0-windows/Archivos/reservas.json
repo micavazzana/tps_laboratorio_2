@@ -1,0 +1,213 @@
+[
+  {
+    "Cliente": {
+      "Nombre": "Quentin",
+      "Apellido": "Tarantino",
+      "Dni": "16428576",
+      "FechaReserva": "2022-06-20T23:01:58",
+      "Mail": "mememaker@hotmail.com",
+      "IdReserva": 1,
+      "EsEstudiante": false
+    },
+    "EquiposReservados": [
+      {
+        "Tipo": "Camara",
+        "Marca": "Sony",
+        "NombreEquipo": "FX3",
+        "Precio": 11900,
+        "Estado": true
+      }
+    ]
+  },
+  {
+    "Cliente": {
+      "Nombre": "Steven",
+      "Apellido": "Spielberg",
+      "Dni": "13528465",
+      "FechaReserva": "2022-06-22T22:14:12",
+      "Mail": "phonehome@yahoo.com",
+      "IdReserva": 2,
+      "EsEstudiante": false
+    },
+    "EquiposReservados": [
+      {
+        "Tipo": "Dimmer",
+        "Marca": "",
+        "NombreEquipo": "1000w",
+        "Precio": 290,
+        "Estado": true
+      },
+      {
+        "Tipo": "Dimmer",
+        "Marca": "",
+        "NombreEquipo": "2000w",
+        "Precio": 290,
+        "Estado": true
+      },
+      {
+        "Tipo": "Luz",
+        "Marca": "Dexel",
+        "NombreEquipo": "Tungsteno 1000w",
+        "Precio": 1300,
+        "Estado": true
+      },
+      {
+        "Tipo": "Luz",
+        "Marca": "Dexel",
+        "NombreEquipo": "Tungsteno 2000w",
+        "Precio": 1500,
+        "Estado": true
+      }
+    ]
+  },
+  {
+    "Cliente": {
+      "Nombre": "Francis",
+      "Apellido": "Ford Coppolla",
+      "Dni": "13845752",
+      "FechaReserva": "2022-06-17T22:14:12",
+      "Mail": "apocalypse@now.com",
+      "IdReserva": 3,
+      "EsEstudiante": false
+    },
+    "EquiposReservados": [
+      {
+        "Tipo": "Drone",
+        "Marca": "DJI",
+        "NombreEquipo": "AIR 2S",
+        "Precio": 15000,
+        "Estado": false
+      }
+    ]
+  },
+  {
+    "Cliente": {
+      "Nombre": "Christopher",
+      "Apellido": "Nolan",
+      "Dni": "24586135",
+      "FechaReserva": "2022-07-01T22:15:50",
+      "Mail": "inception@gmail.com",
+      "IdReserva": 4,
+      "EsEstudiante": false
+    },
+    "EquiposReservados": [
+      {
+        "Tipo": "Camara",
+        "Marca": "Sony",
+        "NombreEquipo": "A6300",
+        "Precio": 4500,
+        "Estado": true
+      },
+      {
+        "Tipo": "Lente",
+        "Marca": "Sony",
+        "NombreEquipo": "FE 35mm f1.8",
+        "Precio": 1100,
+        "Estado": true
+      },
+      {
+        "Tipo": "Lente",
+        "Marca": "Sony",
+        "NombreEquipo": "FE 50mm f1.8",
+        "Precio": 1100,
+        "Estado": true
+      }
+    ]
+  },
+  {
+    "Cliente": {
+      "Nombre": "Malena",
+      "Apellido": "Gomez",
+      "Dni": "39751252",
+      "FechaReserva": "2022-08-15T22:15:50",
+      "Mail": "malegomez@gmail.com",
+      "IdReserva": 5,
+      "EsEstudiante": true
+    },
+    "EquiposReservados": [
+      {
+        "Tipo": "Lente",
+        "Marca": "Rokinon",
+        "NombreEquipo": "DS 14mm",
+        "Precio": 1800,
+        "Estado": true
+      },
+      {
+        "Tipo": "Lente",
+        "Marca": "Rokinon",
+        "NombreEquipo": "DS 25mm",
+        "Precio": 1800,
+        "Estado": true
+      },
+      {
+        "Tipo": "Lente",
+        "Marca": "Rokinon",
+        "NombreEquipo": "DS 35mm",
+        "Precio": 1800,
+        "Estado": true
+      },
+      {
+        "Tipo": "Lente",
+        "Marca": "Rokinon",
+        "NombreEquipo": "DS 50mm",
+        "Precio": 1800,
+        "Estado": true
+      },
+      {
+        "Tipo": "Lente",
+        "Marca": "Rokinon",
+        "NombreEquipo": "DS 85mm",
+        "Precio": 1800,
+        "Estado": true
+      },
+      {
+        "Tipo": "Lente",
+        "Marca": "Rokinon",
+        "NombreEquipo": "DS 105mm",
+        "Precio": 1800,
+        "Estado": true
+      }
+    ]
+  },
+  {
+    "Cliente": {
+      "Nombre": "Lucrecia",
+      "Apellido": "Martel",
+      "Dni": "27548632",
+      "FechaReserva": "2022-06-22T22:18:20",
+      "Mail": "lucre@hotmail.com",
+      "IdReserva": 6,
+      "EsEstudiante": false
+    },
+    "EquiposReservados": [
+      {
+        "Tipo": "Camara",
+        "Marca": "Sony",
+        "NombreEquipo": "A7SII",
+        "Precio": 6500,
+        "Estado": true
+      },
+      {
+        "Tipo": "Lente",
+        "Marca": "Sony",
+        "NombreEquipo": "G-MASTER 24-70mm f2.8",
+        "Precio": 3800,
+        "Estado": true
+      },
+      {
+        "Tipo": "Lente",
+        "Marca": "Sony",
+        "NombreEquipo": "G-MASTER 16-35mm f2.8",
+        "Precio": 3400,
+        "Estado": true
+      },
+      {
+        "Tipo": "Luz",
+        "Marca": "Dexel",
+        "NombreEquipo": "Panel LED 400w BICOLOR",
+        "Precio": 3500,
+        "Estado": true
+      }
+    ]
+  }
+]

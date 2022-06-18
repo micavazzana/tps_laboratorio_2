@@ -1,0 +1,9 @@
+Recibo: 21
+Daniel Hendler
+Fecha de reserva: 27/6/2022
+Id Reserva:21
+Costo total: $4900
+Equipos Reservados:
+Camara - Canon 6D - Precio $3500
+Lente - Tamron 24-70mm f2.8 - Precio $1400
+

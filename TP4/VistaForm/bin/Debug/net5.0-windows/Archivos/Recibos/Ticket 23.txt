@@ -1,0 +1,8 @@
+Recibo: 23
+Akira Kurosawa
+Fecha de reserva: 20/6/2022
+Id Reserva:23
+Costo total: $13000
+Equipos Reservados:
+Generador - HONDA 5.2kw - Precio $13000
+

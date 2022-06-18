@@ -1,0 +1,9 @@
+Recibo: 22
+Gus Van Sant
+Fecha de reserva: 28/6/2022
+Id Reserva: 22
+Costo total: $8800
+Equipos Reservados:
+Gimbal - DJI Ronin S - Precio $5500
+Follow Focus - TILTA NUCLEUS-M - Precio $3300
+
