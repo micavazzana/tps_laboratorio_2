@@ -36,6 +36,13 @@
   },
   {
     "Tipo": "Camara",
+    "Marca": "BlackMagic",
+    "NombreEquipo": "Pocket 6K",
+    "Precio": 11500,
+    "Estado": false
+  },
+  {
+    "Tipo": "Camara",
     "Marca": "Nikon",
     "NombreEquipo": "D5100",
     "Precio": 1600,
@@ -44,8 +51,22 @@
   {
     "Tipo": "Lente",
     "Marca": "Canon",
+    "NombreEquipo": "24-105mm f4 L",
+    "Precio": 1700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Canon",
     "NombreEquipo": "24-70mm f2.8 L",
     "Precio": 2700,
+    "Estado": false
+  },
+  {
+    "Tipo": "Lente",
+    "Marca": "Canon",
+    "NombreEquipo": "70-200mm f2.8 L",
+    "Precio": 2900,
     "Estado": false
   },
   {
@@ -441,24 +462,10 @@
     "Estado": false
   },
   {
-    "Tipo": "Camara",
-    "Marca": "Canon",
-    "NombreEquipo": "6D",
-    "Precio": 3500,
-    "Estado": false
-  },
-  {
     "Tipo": "Lente",
     "Marca": "Tamron",
     "NombreEquipo": "24-70mm f2.8",
     "Precio": 1400,
-    "Estado": false
-  },
-  {
-    "Tipo": "Camara",
-    "Marca": "GoPro",
-    "NombreEquipo": "Hero 9",
-    "Precio": 3200,
     "Estado": false
   },
   {
@@ -477,23 +484,9 @@
   },
   {
     "Tipo": "Camara",
-    "Marca": "BlackMagic",
-    "NombreEquipo": "Pocket 6K",
-    "Precio": 11500,
-    "Estado": false
-  },
-  {
-    "Tipo": "Lente",
-    "Marca": "Canon",
-    "NombreEquipo": "24-105mm f4 L",
-    "Precio": 1700,
-    "Estado": false
-  },
-  {
-    "Tipo": "Lente",
-    "Marca": "Canon",
-    "NombreEquipo": "70-200mm f2.8 L",
-    "Precio": 2900,
+    "Marca": "GoPro",
+    "NombreEquipo": "Hero 9",
+    "Precio": 3200,
     "Estado": false
   }
 ]

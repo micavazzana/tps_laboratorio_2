@@ -109,6 +109,8 @@ namespace VistaForm
                         item.Estado = false;
                     }
                     Serializadora<List<Equipo>>.SerializarJson("equiposEnStock.json", listAux);
+                    //Actualizo la cantidad de reservas
+                    this.lblCantReservasActivas.Text = $"Cantidad de reservas activas: {listadoDeReservas.ContarCantidadReservas()}";
                 }               
             }
             catch (Exception ex)

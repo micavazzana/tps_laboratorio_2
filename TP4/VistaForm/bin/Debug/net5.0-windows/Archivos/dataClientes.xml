@@ -451,20 +451,20 @@
     <EsEstudiante>true</EsEstudiante>
   </Cliente>
   <Cliente>
-    <Nombre>Adrian</Nombre>
-    <Apellido>Suar</Apellido>
-    <Dni>18237515</Dni>
-    <FechaReserva>2022-06-25T20:23:59</FechaReserva>
-    <Mail>adriancito@suarproductions.com</Mail>
+    <Nombre>Juan Jose</Nombre>
+    <Apellido>Campanella</Apellido>
+    <Dni>14258963</Dni>
+    <FechaReserva>2022-06-26T17:16:56</FechaReserva>
+    <Mail>mecreomil@gmail.com</Mail>
     <IdReserva>51</IdReserva>
     <EsEstudiante>false</EsEstudiante>
   </Cliente>
   <Cliente>
-    <Nombre>Adrian</Nombre>
-    <Apellido>Suar</Apellido>
-    <Dni>18237515</Dni>
-    <FechaReserva>2022-06-25T20:23:59</FechaReserva>
-    <Mail>adriancito@suarproductions.com</Mail>
+    <Nombre>Mica</Nombre>
+    <Apellido>Vazzana</Apellido>
+    <Dni>34573250</Dni>
+    <FechaReserva>2022-06-20T17:18:59</FechaReserva>
+    <Mail>micaela.vazzana@gmail.com</Mail>
     <IdReserva>52</IdReserva>
     <EsEstudiante>false</EsEstudiante>
   </Cliente>

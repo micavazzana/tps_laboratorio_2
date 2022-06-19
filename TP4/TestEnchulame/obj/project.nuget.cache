@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X1NORpQW2yBaxPYJBYYPv7Uq9VMY+Uf2/Wqz8vpGkjIc8/UqEF3fqFy8i5jj2klP9ht7yE2QskPZHrTKvorS5g==",
+  "dgSpecHash": "+gF3R7oXj62DxqmgegDlkdchJyyPmE7IDUmiDm3ResrA1dSDp/n34lUGRBqgFfg0s2c8DHiOTvEbUzQ7r1Pk8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mica\\Desktop\\TP4\\TestEnchulame\\TestEnchulame.csproj",
+  "projectFilePath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\TestEnchulame\\TestEnchulame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mica\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Mica\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

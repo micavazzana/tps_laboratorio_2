@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w/vfF48SXiJ/Nv2i4uX09Zaa0Q4Fvics2Oe1JrZS+T8+6OhiFcvGhl5dxhqy6zBLA7gkM6Yi4t4Gnb/IZs8prg==",
+  "dgSpecHash": "3GxCEVDqun03ZKrk+AiEt9mT++67Oskw7hwAqd+uZLjFInftXyL/58xhw2SPJ/FUaMNcVQ5QjIDwtMl19tNl2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mica\\Desktop\\TP4\\VistaForm\\VistaForm.csproj",
+  "projectFilePath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\VistaForm\\VistaForm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mica\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Mica\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

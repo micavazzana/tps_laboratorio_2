@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,6 +15,8 @@ namespace VistaForm
     {
         //Declaracion de un evento
         public event DelegadoConfirmaModificacion OnConfirmaModificacion;
+        //Declaracion de una cancelacion para cancelar los hilos secundarios que corran
+        CancellationTokenSource cancelacion;
 
         private List<Equipo> listadoEquiposDisponibles;
         private List<Equipo> listadoEquiposReservados;
@@ -31,8 +34,8 @@ namespace VistaForm
             InitializeComponent();
             try
             {
+                this.cancelacion = new CancellationTokenSource();
                 this.listadoEquiposDisponibles = Serializadora<List<Equipo>>.DeserializarJson("equiposEnStock.json");
-
                 foreach (Equipo item in this.listadoEquiposDisponibles)
                 {
                     this.lstEquipos.Items.Add(item);
@@ -99,7 +102,7 @@ namespace VistaForm
                             item.Estado = true;
                         }
                     }
-                    Task.Run(() => MostrarPresupuestoFinal(listadoEquiposReservados, this.checkEsEstudiante.Checked));
+                    Task.Run(() => MostrarPresupuestoFinal(listadoEquiposReservados, this.checkEsEstudiante.Checked), cancelacion.Token);
                     int indice = this.listadoEquiposDisponibles.IndexOf((Equipo)this.lstEquipos.SelectedItem);
                     this.lstEquipos.Items.Remove(this.lstEquipos.SelectedItem);
                     this.listadoEquiposDisponibles.Remove(listadoEquiposDisponibles[indice]);
@@ -138,7 +141,7 @@ namespace VistaForm
                             item.Estado = false;
                         }
                     }
-                    Task.Run(() => MostrarPresupuestoFinal(listadoEquiposReservados, this.checkEsEstudiante.Checked));
+                    Task.Run(() => MostrarPresupuestoFinal(listadoEquiposReservados, this.checkEsEstudiante.Checked), cancelacion.Token);
                     int indice = this.listadoEquiposReservados.IndexOf((Equipo)this.lstReservas.SelectedItem);
                     this.lstReservas.Items.Remove(this.lstReservas.SelectedItem);
                     this.listadoEquiposReservados.Remove(listadoEquiposReservados[indice]);
@@ -167,39 +170,34 @@ namespace VistaForm
         {
             try
             {
-                if (String.IsNullOrEmpty(this.lstReservas.Text) && String.IsNullOrEmpty(this.txtNombre.Text)
-                && String.IsNullOrEmpty(this.txtApellido.Text) && String.IsNullOrEmpty(this.txtDni.Text)
-                && this.dtpFechaReserva.Value < DateTime.Now && String.IsNullOrEmpty(this.txtMail.Text))
-                {
-                    MessageBox.Show("Debe completar los campos");
-                }
-                else
-                {
-                    //En caso de ser una modificacion, envio la confirmacion de la modificacion
-                    //a traves de un evento
-                    if (this.OnConfirmaModificacion is not null)
-                        this.OnConfirmaModificacion.Invoke(true);
+                //En caso de ser una modificacion, envio la confirmacion de la modificacion
+                //a traves de un evento
+                if (this.OnConfirmaModificacion is not null)
+                    this.OnConfirmaModificacion.Invoke(true);
 
-                    //Creo un nuevo cliente y guardo xml
-                    Cliente cliente = CrearCliente();
-                    //Creo una nueva reserva y la guardo en un listado
-                    CrearListaReservas(cliente);
-                    //Creo un recibo
-                    string ticket = CrearTicketDeReserva(cliente);
-                    //Actualizo mi listado de equipos disponibles
-                    Serializadora<List<Equipo>>.SerializarJson("equiposEnStock.json", this.listadoEquiposDisponibles);
+                //Creo un nuevo cliente y guardo xml
+                Cliente cliente = CrearCliente();
+                //Creo una nueva reserva y la guardo en un listado
+                CrearListaReservas(cliente);
+                //Creo un recibo
+                string ticket = CrearTicketDeReserva(cliente);
+                //Actualizo mi listado de equipos disponibles
+                Serializadora<List<Equipo>>.SerializarJson("equiposEnStock.json", this.listadoEquiposDisponibles);
 
-                    //LIMPIO LOS CAMPOS Y LISTADOS
-                    this.lstReservas.Items.Clear();
-                    this.txtNombre.Text = String.Empty;
-                    this.txtApellido.Text = String.Empty;
-                    this.txtDni.Text = String.Empty;
-                    this.txtMail.Text = String.Empty;
-                    this.listadoEquiposReservados.Clear();
-                    this.listadoDeReservas.Clear();
+                //Cancelo los hilos que esten corriendo
+                cancelacion.Cancel();
 
-                    MessageBox.Show(ticket, "Reserva confirmada");
-                }
+                //LIMPIO LOS CAMPOS Y LISTADOS
+                this.lstReservas.Items.Clear();
+                this.txtNombre.Text = String.Empty;
+                this.txtApellido.Text = String.Empty;
+                this.txtDni.Text = String.Empty;
+                this.txtMail.Text = String.Empty;
+                this.lblPresupuesto.Text = "Presupuesto: $0";
+                this.listadoEquiposReservados.Clear();
+                this.listadoDeReservas.Clear();
+
+                MessageBox.Show(ticket, "Reserva confirmada");
             }
             catch (Exception ex)
             {
@@ -214,27 +212,37 @@ namespace VistaForm
         /// o contiene una excepcion arrojada al crear el nuevo id</exception>
         private Cliente CrearCliente()
         {
-            Cliente cliente = new Cliente(this.txtNombre.Text, this.txtApellido.Text, this.txtDni.Text, this.dtpFechaReserva.Value, this.txtMail.Text);
             try
             {
-                if (this.checkEsEstudiante.Checked)
+                if (this.txtNombre.Text.ValidarNombresYApellidos()
+                    && this.txtApellido.Text.ValidarNombresYApellidos()
+                    && this.txtDni.Text.ValidarDni()
+                    && this.txtMail.Text.ValidarMails())
                 {
-                    cliente.EsEstudiante = true;
-                }
-                //Agrego el manejo de los clientes a traves de una conexion a bases de datos
-                GestorSqlCliente.AltaCliente(cliente);
+                    Cliente cliente = new Cliente(this.txtNombre.Text, this.txtApellido.Text, this.txtDni.Text, this.dtpFechaReserva.Value, this.txtMail.Text);
+                    if (this.checkEsEstudiante.Checked)
+                    {
+                        cliente.EsEstudiante = true;
+                    }
+                    //Agrego el manejo de los clientes a traves de una conexion a bases de datos
+                    GestorSqlCliente.AltaCliente(cliente);
 
-                //Sigo guardando los datos en un xml(Sostengo lo hecho en tp3)
-                cliente.IdReserva = CrearNuevoNumeroAutoIncremental("ids.txt");
-                this.listadoClientes = Serializadora<List<Cliente>>.DeserializarXml("dataClientes.xml");
-                this.listadoClientes.Add(cliente);
-                Serializadora<List<Cliente>>.SerializarXml("dataClientes.xml", this.listadoClientes);
+                    //Sigo guardando los datos en un xml(Sostengo lo hecho en tp3)
+                    cliente.IdReserva = CrearNuevoNumeroAutoIncremental("ids.txt");
+                    this.listadoClientes = Serializadora<List<Cliente>>.DeserializarXml("dataClientes.xml");
+                    this.listadoClientes.Add(cliente);
+                    Serializadora<List<Cliente>>.SerializarXml("dataClientes.xml", this.listadoClientes);
+                    return cliente;
+                }
+                else
+                {
+                    throw new Exception("Algun dato ingresado es invalido");
+                }
             }
             catch (Exception ex)
             {
                 throw new Exception("Error al dar de alta el cliente", ex.InnerException);
             }
-            return cliente;
         }
         /// <summary>
         /// Crea un nuevo numero autoincremental, 
@@ -331,7 +339,7 @@ namespace VistaForm
         {
             try
             {
-                Task.Run(() => MostrarPresupuestoFinal(listadoEquiposReservados, this.checkEsEstudiante.Checked));
+                Task.Run(() => MostrarPresupuestoFinal(listadoEquiposReservados, this.checkEsEstudiante.Checked), cancelacion.Token);
             }
             catch (Exception ex)
             {

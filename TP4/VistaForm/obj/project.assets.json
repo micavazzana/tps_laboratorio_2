@@ -477,11 +477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mica\\Desktop\\TP4\\VistaForm\\VistaForm.csproj",
+      "projectUniqueName": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\VistaForm\\VistaForm.csproj",
       "projectName": "VistaForm",
-      "projectPath": "C:\\Users\\Mica\\Desktop\\TP4\\VistaForm\\VistaForm.csproj",
+      "projectPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\VistaForm\\VistaForm.csproj",
       "packagesPath": "C:\\Users\\Mica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mica\\Desktop\\TP4\\VistaForm\\obj\\",
+      "outputPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\VistaForm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mica\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -498,8 +498,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Mica\\Desktop\\TP4\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Mica\\Desktop\\TP4\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\Entidades\\Entidades.csproj"
             }
           }
         }

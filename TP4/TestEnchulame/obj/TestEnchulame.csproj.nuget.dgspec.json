@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mica\\Desktop\\TP4\\TestEnchulame\\TestEnchulame.csproj": {}
+    "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\TestEnchulame\\TestEnchulame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mica\\Desktop\\TP4\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mica\\Desktop\\TP4\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Mica\\Desktop\\TP4\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Mica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mica\\Desktop\\TP4\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mica\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Mica\\Desktop\\TP4\\TestEnchulame\\TestEnchulame.csproj": {
+    "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\TestEnchulame\\TestEnchulame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mica\\Desktop\\TP4\\TestEnchulame\\TestEnchulame.csproj",
+        "projectUniqueName": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\TestEnchulame\\TestEnchulame.csproj",
         "projectName": "TestEnchulame",
-        "projectPath": "C:\\Users\\Mica\\Desktop\\TP4\\TestEnchulame\\TestEnchulame.csproj",
+        "projectPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\TestEnchulame\\TestEnchulame.csproj",
         "packagesPath": "C:\\Users\\Mica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mica\\Desktop\\TP4\\TestEnchulame\\obj\\",
+        "outputPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\TestEnchulame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mica\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Mica\\Desktop\\TP4\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Mica\\Desktop\\TP4\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\Entidades\\Entidades.csproj"
               }
             }
           }

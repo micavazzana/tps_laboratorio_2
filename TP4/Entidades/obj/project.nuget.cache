@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x8rmywrcA9d07xYpsfM+ktfxsvk71Gepj7RdZu4owZnTyWQ3YDXK+2Qh5MOfA2eZMF+RTJe65MLgxaWHLrsosQ==",
+  "dgSpecHash": "ZwWyz8AaVPbmekCmHlNDEVc8xtHJBim0/HAW9g/Upu7Lpxu5JNbvWscLebIN/Zz9oiTti+zWAoUSM29r1pavGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mica\\Desktop\\TP4\\Entidades\\Entidades.csproj",
+  "projectFilePath": "C:\\Users\\Mica\\Desktop\\PrograLaboII\\tps_laboratorio_2\\TP4\\Entidades\\Entidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mica\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Mica\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

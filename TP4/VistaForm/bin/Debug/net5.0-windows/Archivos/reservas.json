@@ -209,5 +209,25 @@
         "Estado": true
       }
     ]
+  },
+  {
+    "Cliente": {
+      "Nombre": "Juan Jose",
+      "Apellido": "Campanella",
+      "Dni": "14258963",
+      "FechaReserva": "2022-06-26T17:16:56",
+      "Mail": "mecreomil@gmail.com",
+      "IdReserva": 51,
+      "EsEstudiante": false
+    },
+    "EquiposReservados": [
+      {
+        "Tipo": "Camara",
+        "Marca": "Canon",
+        "NombreEquipo": "6D",
+        "Precio": 3500,
+        "Estado": true
+      }
+    ]
   }
 ]
