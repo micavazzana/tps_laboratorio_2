@@ -383,7 +383,15 @@ namespace VistaForm
         {
             if (this.OnConfirmaModificacion is not null)
                 this.OnConfirmaModificacion.Invoke(false);
+            //Cancelo los hilos que esten corriendo
+            cancelacion.Cancel();
             this.Close();
+        }
+
+        private void FrmRealizarReserva_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Cancelo los hilos que esten corriendo
+            cancelacion.Cancel();
         }
     }
 }
